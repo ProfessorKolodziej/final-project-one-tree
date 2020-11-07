@@ -1,16 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
-h1 {
-  color: green;
-}
-
-.image-logo {
-  max-width: 20%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Josefin Sans", san-serif;
-  /* Add font family */
+  background-color: #F0FBFF;
+}
+
+h1 {
+  color: #187738;
+}
+
+h2 {
+  color: #187738;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.nav-wrapper {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  list-style-type: none;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-logo {
+  width: 40px;
+  display: inline-block;
+}
+
+.nav-list {
+  display: inline-block;
+}
+
+.nav-link {
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: #187738;
+}
+
+.project-button {
+  font-family: inherit;
+  border: solid 1px #187738;
+  border-radius: 50px;
+  color: #187738;
+  background-color: #F0FBFF; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.current {
+  background-color: #187738;
+  color: white;
+}
+
+.project-button:hover {
+  border: solid 2px #187738;
+  font-weight: bold;
+}
+
+.nav-logo img {
+  vertical-align: middle;
 }
 
 a {
@@ -20,3 +85,14 @@ a {
 a:hover {
   color: green;
 }
+
+@media screen and (min-width: 647px) {
+  .nav-logo {
+    width: 60px;
+  }
+  
+  .nav-link {
+    font-size: 15px;
+  }
+}
+
