@@ -20,8 +20,47 @@ $desktop: 1200px;
 
 $red: #ab424a;
 $orange: #dd7c00;
-$green: #3b975f;
-$blue: #4261ab;
+$green:#187738;
+$blue: #F0FBFF;
+
+body {
+	margin: 0;
+    padding: 0;
+	background-color: $blue;
+}
+//Navbar Styling
+.nav-link {
+	font-size: 12px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 25px;
+	color: $green;
+  }
+  
+  .project-button {
+	font-family: inherit;
+	border: solid 1px $green;
+	border-radius: 50px;
+	color: $green;
+	background-color: $blue; 
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+  }
+  
+  .current {
+	background-color: $green;
+	color: white;
+  }
+  
+  .project-button:hover {
+	border: solid 2px $green;
+	font-weight: bold;
+  }
+  
+  .nav-logo img {
+	vertical-align: middle;
+  }
 
 .page-heading {
 	color: $red;
