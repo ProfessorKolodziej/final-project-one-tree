@@ -3,7 +3,9 @@
 // Huh. Wouldn't it be nice if we didn't have to repeat this?
 // With partials, you don't have to. Create a color variables
 // partial and include it at the top.
-
+$large-phone: 500px;
+$tablet-vertical: 768px;
+$desktop: 1200px;
 
 
 .nav-wrapper {
@@ -30,3 +32,14 @@
   .nav-list {
 	display: inline-block;
   }
+
+  @media screen and (min-width: $large-phone) {
+	.nav-logo {
+	  width: 60px;
+	}
+	
+	.nav-link {
+	  font-size: 15px;
+	}
+  }
+  
