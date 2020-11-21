@@ -13,20 +13,11 @@ h1 {
 
 h2 {
   color: #187738;
-  padding: 25px;
 }
 
 h3 {
   font-weight: 100;
   font-size: 12px;
-}
-
-a {
-  color: blue;
-}
-
-a:hover {
-  color: green;
 }
 
 .nav-wrapper {
@@ -87,6 +78,14 @@ a:hover {
   vertical-align: middle;
 }
 
+a {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
 @media screen and (min-width: 647px) {
   .nav-logo {
     width: 60px;
@@ -97,37 +96,3 @@ a:hover {
   }
 }
 
-.one-tree-title {
-  text-align: center;
-  padding: 25px;
-}
-
-.scroll-to-grow-a-tree {
-  color: #187738;
-}
-
-.trees-matter-fact {
-  display: block;
-  height: 200px;
-  margin: 100px;
-  margin-left: 400px;
-  padding: 25px;
-  width: 200px;
-}
-
-.trees-need-help-fact {
-  display: block;
-  height: 200px;
-  margin: 100px;
-  margin-left: 400px;
-  padding: 25px;
-  width: 200px;
-}
-
-.learn-more {
-  text-align: center;
-}
-
-.resources {
-  text-align: center;
-}
