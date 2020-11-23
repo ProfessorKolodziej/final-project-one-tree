@@ -1,12 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
 // Load CSS Reset from NPM
 // CSS resets "normalize" how browser styles are applied.
 // Try uncommenting this and saving. What changes in the browser?
 @import "~normalize.css";
-
-// An example of a partial.
-// Check out the _typography.scss file to edit the CSS inside!
-@import "typography";
-@import "layout";
 
 // You can still write styles in this file too.
 // Here's an example of how you could write media queries more easily with Sass.
@@ -24,6 +21,58 @@ $green:#187738;
 $blue: #F0FBFF;
 
 body {
+	font-family: "Josefin Sans", san-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h3 {
+	font-weight: 100;
+	font-size: 12px;
+}
+
+h6 {
+	color: $green;
+	line-height: 1.3;
+	margin-top: 0;
+}
+
+.nav-wrapper {
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  .nav-bar {
+	list-style-type: none;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+  }
+
+  .nav-logo {
+	width: 40px;
+	display: inline-block;
+  }
+
+  .nav-list {
+	display: inline-block;
+  }
+
+  @media screen and (min-width: $large-phone) {
+	.nav-logo {
+	  width: 60px;
+	}
+
+	.nav-link {
+	  font-size: 15px;
+	}
+  }
+
+body {
 	margin: 0;
     padding: 0;
 	background-color: $blue;
@@ -36,50 +85,28 @@ body {
 	padding: 10px 25px;
 	color: $green;
   }
-  
+
   .project-button {
 	font-family: inherit;
 	border: solid 1px $green;
 	border-radius: 50px;
 	color: $green;
-	background-color: $blue; 
+	background-color: $blue;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
   }
-  
+
   .current {
 	background-color: $green;
 	color: white;
   }
-  
+
   .project-button:hover {
 	border: solid 2px $green;
 	font-weight: bold;
   }
-  
+
   .nav-logo img {
 	vertical-align: middle;
   }
-
-.page-heading {
-	color: $red;
-
-	// Sass lets you write your media queries inline if you want.
-	// This is why I'm always forgetting I have to put the class inside
-	// the media query in regular CSS. I never have to in Sass!
-	// I like combining these with variables to make it easier to read
-	// my media queries.
-
-	@media screen and (min-width: $large-phone) {
-		color: $orange;
-	}
-
-	@media screen and (min-width: $tablet-vertical) {
-		color: $green;
-	}
-
-	@media screen and (min-width: $desktop) {
-		color: $blue;
-	}
-}
