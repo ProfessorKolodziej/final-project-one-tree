@@ -12,6 +12,14 @@ $large-phone: 500px;
 $tablet-vertical: 768px;
 $desktop: 1200px;
 
+// And some color variables.
+// Look how much easier it is to keep track of what these are than hex codes!
+
+$red: #ab424a;
+$orange: #dd7c00;
+$green:#187738;
+$blue: #F0FBFF;
+
 body {
 	font-family: "Josefin Sans", san-serif;
 	font-size: 18px;
@@ -35,7 +43,7 @@ h6 {
 	justify-content: space-between;
 	align-items: center;
   }
-  
+
   .nav-bar {
 	list-style-type: none;
 	width: 100vw;
@@ -44,12 +52,12 @@ h6 {
 	display: flex;
 	justify-content: flex-end;
   }
-  
+
   .nav-logo {
 	width: 40px;
 	display: inline-block;
   }
-  
+
   .nav-list {
 	display: inline-block;
   }
@@ -58,19 +66,11 @@ h6 {
 	.nav-logo {
 	  width: 60px;
 	}
-	
+
 	.nav-link {
 	  font-size: 15px;
 	}
   }
-
-// And some color variables.
-// Look how much easier it is to keep track of what these are than hex codes!
-
-$red: #ab424a;
-$orange: #dd7c00;
-$green:#187738;
-$blue: #F0FBFF;
 
 body {
 	margin: 0;
@@ -85,28 +85,28 @@ body {
 	padding: 10px 25px;
 	color: $green;
   }
-  
+
   .project-button {
 	font-family: inherit;
 	border: solid 1px $green;
 	border-radius: 50px;
 	color: $green;
-	background-color: $blue; 
+	background-color: $blue;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
   }
-  
+
   .current {
 	background-color: $green;
 	color: white;
   }
-  
+
   .project-button:hover {
 	border: solid 2px $green;
 	font-weight: bold;
   }
-  
+
   .nav-logo img {
 	vertical-align: middle;
   }
