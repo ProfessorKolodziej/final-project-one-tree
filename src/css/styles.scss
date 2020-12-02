@@ -21,29 +21,41 @@ $green:#187738;
 $blue: #F0FBFF;
 
 body {
+	margin: 0;
+	padding: 0;
 	font-family: "Josefin Sans", san-serif;
-	font-size: 18px;
-	line-height: 1.5;
-}
-
-h3 {
+	background-color: #F0FBFF;
+  }
+  
+  h1 {
+	color: #187738;
+  }
+  
+  h2 {
+	color: #187738;
+	padding: 25px;
+  }
+  
+  h3 {
 	font-weight: 100;
 	font-size: 12px;
-}
-
-h6 {
-	color: $green;
-	line-height: 1.3;
-	margin-top: 0;
-}
-
-.nav-wrapper {
+  }
+  
+  a {
+	color: blue;
+  }
+  
+  a:hover {
+	color: green;
+  }
+  
+  .nav-wrapper {
 	margin: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
   }
-
+  
   .nav-bar {
 	list-style-type: none;
 	width: 100vw;
@@ -52,61 +64,91 @@ h6 {
 	display: flex;
 	justify-content: flex-end;
   }
-
+  
   .nav-logo {
 	width: 40px;
 	display: inline-block;
   }
-
+  
   .nav-list {
 	display: inline-block;
   }
-
-  @media screen and (min-width: $large-phone) {
-	.nav-logo {
-	  width: 60px;
-	}
-
-	.nav-link {
-	  font-size: 15px;
-	}
-  }
-
-body {
-	margin: 0;
-    padding: 0;
-	background-color: $blue;
-}
-//Navbar Styling
-.nav-link {
+  
+  .nav-link {
 	font-size: 12px;
 	display: inline-block;
 	text-decoration: none;
 	padding: 10px 25px;
-	color: $green;
+	color: #187738;
   }
-
+  
   .project-button {
 	font-family: inherit;
-	border: solid 1px $green;
+	border: solid 1px #187738;
 	border-radius: 50px;
-	color: $green;
-	background-color: $blue;
+	color: #187738;
+	background-color: #F0FBFF; 
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
   }
-
+  
   .current {
-	background-color: $green;
+	background-color: #187738;
 	color: white;
   }
-
+  
   .project-button:hover {
-	border: solid 2px $green;
+	border: solid 2px #187738;
 	font-weight: bold;
   }
-
+  
   .nav-logo img {
 	vertical-align: middle;
   }
+  
+  @media screen and (min-width: 647px) {
+	.nav-logo {
+	  width: 60px;
+	}
+	
+	.nav-link {
+	  font-size: 15px;
+	}
+  }
+  
+  .one-tree-title {
+	text-align: center;
+	padding: 25px;
+  }
+  
+  .scroll-to-grow-a-tree {
+	color: #187738;
+  }
+  
+  .trees-matter-fact {
+	display: block;
+	height: 200px;
+	margin: 100px;
+	margin-left: 400px;
+	padding: 25px;
+	width: 200px;
+  }
+  
+  .trees-need-help-fact {
+	display: block;
+	height: 200px;
+	margin: 100px;
+	margin-left: 400px;
+	padding: 25px;
+	width: 200px;
+  }
+  
+  .learn-more {
+	text-align: center;
+  }
+  
+  .resources {
+	text-align: center;
+  }
+  
