@@ -4,9 +4,12 @@
 // Your typography styles here.
 
 body {
-	font-family: "Josefin Sans", san-serif;
+	font-family: "Josefin Sans", sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
+}
+p {
+	font-size: 24pt;
 }
 
 $green:#187738;
@@ -24,8 +27,8 @@ h6 {
 
 h3 {
 	font-weight: 100;
-	font-size: 12px;
-  }
+	font-size: 180px;
+}
 
 // You can type two slashes to create a comment in Sass.
 
@@ -33,4 +36,3 @@ h3 {
 // Most people put their variables in a _colors.scss partial to
 // help keep them organized and in one place across files.
 // This makes it easier to work together!
-
