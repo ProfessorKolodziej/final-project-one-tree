@@ -18,160 +18,137 @@ $desktop: 1200px;
 $red: #ab424a;
 $orange: #dd7c00;
 $green:#187738;
-$blue: #f0fbff;
+$blue: #F0FBFF;
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Josefin Sans", sans-serif;
-	background-color: #f0fbff;
-}
-
-h1 {
-	font-size: 40px;
+	font-family: "Josefin Sans", san-serif;
+	background-color: #F0FBFF;
+  }
+  
+  h1 {
 	color: #187738;
-}
-
-h2 {
+  }
+  
+  h2 {
 	color: #187738;
 	padding: 25px;
-}
-
-h3 {
+  }
+  
+  h3 {
 	font-weight: 100;
-	font-size: 18px;
-}
-
-p {
-	font-size: 20px;
-}
-
-a {
+	font-size: 12px;
+  }
+  
+  a {
 	color: blue;
-}
-
-a:hover {
+  }
+  
+  a:hover {
 	color: green;
-}
-
-.nav-wrapper {
+  }
+  
+  .nav-wrapper {
 	margin: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.nav-bar {
+  }
+  
+  .nav-bar {
 	list-style-type: none;
 	width: 100vw;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	justify-content: flex-end;
-}
-
-.nav-logo {
+  }
+  
+  .nav-logo {
 	width: 40px;
 	display: inline-block;
-}
-
-.nav-list {
+  }
+  
+  .nav-list {
 	display: inline-block;
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
 	font-size: 12px;
 	display: inline-block;
 	text-decoration: none;
 	padding: 10px 25px;
 	color: #187738;
-}
-
-.project-button {
+  }
+  
+  .project-button {
 	font-family: inherit;
 	border: solid 1px #187738;
 	border-radius: 50px;
 	color: #187738;
-	background-color: #f0fbff;
+	background-color: #F0FBFF; 
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-}
-
-.current {
+  }
+  
+  .current {
 	background-color: #187738;
 	color: white;
-}
-
-.project-button:hover {
+  }
+  
+  .project-button:hover {
 	border: solid 2px #187738;
 	font-weight: bold;
-}
-
-.nav-logo img {
+  }
+  
+  .nav-logo img {
 	vertical-align: middle;
-}
-
-@media screen and (min-width: 647px) {
+  }
+  
+  @media screen and (min-width: 647px) {
 	.nav-logo {
-		width: 60px;
+	  width: 60px;
 	}
-
+	
 	.nav-link {
-		font-size: 15px;
+	  font-size: 15px;
 	}
-}
-
-// Title
-.title-container {
-	height: 100vh;
-	margin: -95px 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: solid 1px red;
-}
-
-.one-tree-title {
+  }
+  
+  .one-tree-title {
 	text-align: center;
-}
-
-.scroll-to-grow-a-tree {
+	padding: 25px;
+  }
+  
+  .scroll-to-grow-a-tree {
 	color: #187738;
-}
-
-//Why Trees Matter
-.container-one {
-	margin-top: 95px;
-}
-
-.heading {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	border: solid 1px blue;
-}
-
-.fact {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	border: solid 1px red;
-}
-
-.fact > p {
-	margin: 0 40px 0 0;
-	width: 40%;
-	line-height: 30px;
-}
-
-//Learn more
-.learn-more-container{
-	margin: 0;
-}
-
-.learn-more {
+  }
+  
+  .trees-matter-fact {
+	display: block;
+	height: 200px;
+	margin: 100px;
+	margin-left: 400px;
+	padding: 25px;
+	width: 200px;
+  }
+  
+  .trees-need-help-fact {
+	display: block;
+	height: 200px;
+	margin: 100px;
+	margin-left: 400px;
+	padding: 25px;
+	width: 200px;
+  }
+  
+  .learn-more {
 	text-align: center;
-}
+  }
+  
+  .resources {
+	text-align: center;
+  }
+  
