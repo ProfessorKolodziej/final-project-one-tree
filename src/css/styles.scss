@@ -129,6 +129,20 @@ a:hover {
 	}
 }
 
+.animation {
+	position: fixed;
+	width: 50%;
+	padding: 0;
+	height: 100vh;
+}
+
+.treeScene {
+	width: 100%;
+	margin: 95px 0;
+	position: relative;
+	border: solid 1px blue;
+}
+
 // Title
 .title-container {
 	height: 100vh;
@@ -193,4 +207,10 @@ a:hover {
 .learn-more {
 	text-align: center;
 	line-height: 40px;
+}
+
+#treeLottie {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
