@@ -93,6 +93,7 @@
     "ftp-deploy": "^2.3.8",
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
+    "lottie-web": "^5.7.4",
     "normalize.css": "^8.0.1",
     "scrollmagic": "^2.0.8",
     "webpack-dev-server": "^3.11.0"
