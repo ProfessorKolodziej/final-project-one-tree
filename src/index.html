@@ -6,14 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
   <title>One Tree</title>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
   
 </head>
 
@@ -28,7 +20,8 @@
         </ul>
       </div>
     </nav>
-	
+  
+  <!--Title-->
 	<div class="title-container">
 		<div class="one-tree-title">
 			<h1 id="home">One Tree</h1>
@@ -36,10 +29,18 @@
 		</div>
 	</div>
 
+  <!--Tree-->
+  <div id="treeLottie" class="animation"></div>
+  <div id="treeTrigger" class="treeScene"></div>
+
+  <!--First Section-->
 	<div id="trigger1" class="container-one">
-		<div id="pin1" class="heading">
+		<div id="pin1"  class="heading">
 			<h2>Why do trees matter?</h2>
-		</div>
+    </div>
+    
+
+    <div id="trigger2" class="heading"></div>
 		
 		
 		<div class="trees-matter-fact-container">
@@ -59,6 +60,7 @@
 		</div>
   </div>  
   
+  <!--Second Section-->
   <div class="heading">
     <h2>But trees need our help.</h2>
   </div>
@@ -67,18 +69,44 @@
       <p>
       The frequency of wildfires and deforestation are increasing rapidly due to hotter, drier climates and agricultural and infrastructure projects.
       </p>
-    </div>
+  </div>
     
-    <div class="fact">
+  <div class="fact">
     <p>
       Different climate stressors are putting the health of trees in danger. Bouts of droughts or intense rain, rising temperatures, changing season lengths, and extreme weather are all troubling them. These stressors change rapidly, and there isn’t much time for them to adapt.
     </p>
-  
-    </div>
+  </div>
     
+  <!--Third Section-->
     <div class="heading">
-      <h2>We have the power to help.</h2>
+      <h2>Here are some ways to help save our trees.</h2>
     </div>
+
+    <div class="fact">
+      <p>To donate for a tree to be planted on your behalf, visit
+        <a href="https://teamtrees.org/">teamtrees.org</a>.<br><br>
+      $1 donated = 1 tree planted.</p>
+  </div>
+    
+  <div class="fact">
+    <p>Use the search engine
+      <a href="https://www.ecosia.org/">Ecosia</a>, and for every 45 searches, a tree will be planted in biodiversity hotspots around the world.
+    </p>
+  </div>
+
+  <div class="fact">
+    <p>Shop green products and services such as 
+      <a href="https://www.organicvalley.coop/">Organic Valley</a> and 
+      <a href="https://runa.com/">Runa Energy Drinks.</a></p> 
+  </div>
+
+  <div class="fact">
+    <p>And finally, 
+      <a href="https://how2recycle.info/">reduce, resue, and recycle</a> to reduce your envrionmental impact.
+    </p>
+  </div>
+
+  <!--Learn More-->
       
     <div class="title-container learn-more-container">
 
@@ -86,19 +114,15 @@
         <h2 id="learn-more" class="learn-more-heading">To Learn More</h2>
 
         <div class="resources">
-          <p>About the climate crisis, visit:
-            <a href="https://explore.panda.org/forests">the World Wildlife Fund</a> or
-            <a href="https://www.greenpeace.org/usa/issues/">Greenpeace.</a>
+          <h3>About the climate crisis, visit:</h3>
+          <p>
+            <a href="https://explore.panda.org/forests">The World Wildlife Fund</a><br>
+            <a href="https://www.greenpeace.org/usa/issues/">Greenpeace</a>
           </p>
-          <p>About how to get involved, visit: 
-            <a href="https://www.greenamerica.org/save-trees">Green America</a> or
-            <a href="https://standfortrees.org/">Stand for Trees</a>.
-          </p>
-          <p>To donate for a tree to be planted on your behalf, visit
-            <a href="https://teamtrees.org/">teamtrees.org</a>.$1 = 1 tree.
-          </p>
-          <p>Try the web browser
-            <a href="https://www.ecosia.org/">Ecosia</a>,and every 45 searches, you will plant a tree.
+          <h3>About how to get involved, visit: </h3>
+          <p>
+            <a href="https://www.greenamerica.org/save-trees">Green America</a><br>
+            <a href="https://standfortrees.org/">Stand for Trees</a>
           </p>
         </div>
       </div>
