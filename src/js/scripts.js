@@ -23,7 +23,7 @@ function pintree () {
     duration: '1100%'
   })
   .setPin('#treeLottie', {pushFollowers: false})
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller)
 };
 

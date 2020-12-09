@@ -186,6 +186,14 @@ a:hover {
 	width: 40%;
 }
 
+.heading1 {
+	justify-content: flex-start;
+}
+
+.heading1 > h2 {
+	width: 100%;
+}
+
 .fact {
 	height: 100vh;
 	display: flex;
@@ -210,6 +218,9 @@ a:hover {
 	line-height: 40px;
 }
 
-
+.top {
+	font-weight: 300;
+	text-decoration: none;
+}
 
 
