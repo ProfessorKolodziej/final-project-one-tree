@@ -1,51 +1,6 @@
 // Add your scripts here
 
-
-import ScrollMagic from 'ScrollMagic';
-import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js';
-import { TimelineMax } from 'gsap/all';
 import lottie from 'lottie-web';
-
-const controller = new ScrollMagic.Controller();
-
-const tl = new TimelineMax();
-
-function stickyAnimation() {
-  const stickyHeader = new ScrollMagic.Scene({
-    triggerElement: '#trigger1',
-    triggerHook: 0.5,
-    duration: '50%',
-  })
-    .setPin('#pin1', { pushFollowers: false })
-    //.addIndicators()
-    .addTo(controller);
-
-  // let fixHeader = new ScrollMagic.Scene({
-  //    triggerElement: "#trigger2",
-  //    triggerHook: 0.2,
-  // })
-  // .setPin("#pin1")
-  // .setClassToggle("#pin1", "shrink")
-  // .addIndicators()
-  // .addTo(controller);
-
-  /* const animationScene = new ScrollMagic.Scene({
-    triggerElement: '#trigger1',
-    duration: '800%',
-  })
-    // .setClassToggle('#pin1', 'test')
-    .setTween(tl)
-    .addTo(controller); */
-
-  const treeScene = new ScrollMagic.Scene({
-    triggerElement: '#treeTrigger',
-    triggerHook: 0,
-    duration: '1100%',
-  })
-    .setTween(tl)
-    .addIndicators()
-    .addTo(controller);
-}
 
 const animation = lottie.loadAnimation({
   container: document.getElementById('treeLottie'),
@@ -56,16 +11,16 @@ const animation = lottie.loadAnimation({
   // path: 'data.json',
 });
 
-stickyAnimation();
-
-function onAnimationDOMLoaded(e) {
-  tl.to({ frame: 0 }, 3, {
-    frame: animation.totalFrames - 1,
-    onUpdate() {
-      animation.goToAndStop(Math.round(this.target.frame), true);
-    },
-    ease: Linear.easeNone,
-  });
+const duration = document.body.clientHeight * 4;
+//console.log(document.body.clientHeight);
+function animatelottie() {
+  //console.log(this.documentElement.scrollTop);
+  const scrollPosition = this.documentElement.scrollTop;
+  //console.log(document.body.clientHeight);
+  const scrollPercentage = Math.round(100 * (scrollPosition / document.body.clientHeight));
+  //console.log(scrollPercentage);
+  //const maxFrames = animation.totalframes;
+  //const frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
+  animation.goToAndStop((scrollPercentage) * 155);
 }
-
-animation.addEventListener('DOMLoaded', onAnimationDOMLoaded);
+document.addEventListener('scroll', animatelottie);
