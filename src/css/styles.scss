@@ -125,8 +125,7 @@ a:hover {
 	}
 }
 
-
-.animation { 
+.animation {
 	position: sticky;
 	padding: 0;
 	height: 100vh;
@@ -186,12 +185,8 @@ a:hover {
 	width: 40%;
 }
 
-.heading1 {
-	justify-content: flex-start;
-}
-
 .heading1 > h2 {
-	width: 100%;
+	width: 80%;
 }
 
 .fact {
@@ -199,7 +194,6 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	//border: solid 1px red;
 }
 
 .fact > p {
@@ -222,5 +216,3 @@ a:hover {
 	font-weight: 300;
 	text-decoration: none;
 }
-
-
