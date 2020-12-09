@@ -48,13 +48,19 @@ p {
 	font-size: 20px;
 }
 
+@media screen and (max-width: 767px) {
+	p {
+		font-size: 16px;
+	}
+}
+
 a {
 	color: #187738;
 	font-weight: 500;
 }
 
 a:hover {
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .test {
@@ -216,7 +222,7 @@ a:hover {
 }
 
 .project-container {
-	padding: 25px;
+	text-align: center;
 }
 
 .project-headings {
