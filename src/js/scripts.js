@@ -14,32 +14,31 @@ const animation = lottie.loadAnimation({
   // path: 'data.json',
 });
 
-var controller = new ScrollMagic.Controller();
+const controller = new ScrollMagic.Controller();
 
-function pintree () {
-  var pinHeading1 = new ScrollMagic.Scene({
+function pintree() {
+  const pinHeading1 = new ScrollMagic.Scene({
     triggerElement: '#trigger',
     triggerHook: 0,
-    duration: '1100%'
+    duration: '1100%',
   })
-  .setPin('#treeLottie', {pushFollowers: false})
+    .setPin('#treeLottie', { pushFollowers: false })
   // .addIndicators()
-  .addTo(controller)
-};
+    .addTo(controller);
+}
 
 pintree();
 
 const duration = document.body.clientHeight * 4;
-//console.log(document.body.clientHeight);
+// console.log(document.body.clientHeight);
 function animatelottie() {
-  //console.log(this.documentElement.scrollTop);
+  // console.log(this.documentElement.scrollTop);
   const scrollPosition = this.documentElement.scrollTop;
-  //console.log(document.body.clientHeight);
+  // console.log(document.body.clientHeight);
   const scrollPercentage = Math.round(100 * (scrollPosition / document.body.clientHeight));
-  //console.log(scrollPercentage);
-  //const maxFrames = animation.totalframes;
-  //const frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
+  // console.log(scrollPercentage);
+  // const maxFrames = animation.totalframes;
+  // const frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
   animation.goToAndStop((scrollPercentage) * 155);
 }
 document.addEventListener('scroll', animatelottie);
-
