@@ -48,13 +48,19 @@ p {
 	font-size: 20px;
 }
 
+@media screen and (max-width: 767px) {
+	p {
+		font-size: 16px;
+	}
+}
+
 a {
 	color: #187738;
 	font-weight: 500;
 }
 
 a:hover {
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .nav-wrapper {
@@ -216,3 +222,13 @@ a:hover {
 	font-weight: 300;
 	text-decoration: none;
 }
+
+.project-container {
+	text-align: center;
+}
+
+.project-headings {
+	font-size: 26px;
+	padding: 25px;
+}
+
