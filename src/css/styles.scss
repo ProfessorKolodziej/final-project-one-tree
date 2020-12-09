@@ -125,18 +125,23 @@ a:hover {
 	}
 }
 
+
 .animation { 
-	position: fixed;
-	width: 50%;
+	position: sticky;
 	padding: 0;
 	height: 100vh;
-	border: solid 1px red;
+	top: 0;
+	left: 0;
 }
 
-.treeScene {
-	width: 100%;
-	margin: 95px 0;
-	position: relative;
+.endanimation {
+	position: sticky;
+}
+
+.tree-container {
+	width: 50%;
+	height: 0%;
+	float: left;
 }
 
 // Title
@@ -205,8 +210,6 @@ a:hover {
 	line-height: 40px;
 }
 
-#treeLottie {
-	position: fixed;
-	top: 0;
-	left: 0;
-}
+
+
+
